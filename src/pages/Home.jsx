@@ -1,10 +1,15 @@
 import React from "react";
+import { TextLogo } from "../components/TextLogo";
+import { Navbar } from "../components/Navbar";
 
 export const Home = () => {
   return (
     <>
-      {/* Logo + Navbar (potential Theme Toggler?) */}
-      <header></header>
+      {/* TextLogo + Navbar (potential Theme Toggler?) */}
+      <header className="w-full fixed top-0 flex justify-between items-center font-['Zain'] py-8 sm:px-18 px-8">
+        <TextLogo />
+        <Navbar />
+      </header>
       <main>
         {/* Hero-Section */}
         <section></section>
