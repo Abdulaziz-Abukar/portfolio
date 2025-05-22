@@ -13,7 +13,7 @@ export const Navbar = () => {
   return (
     <nav>
       {/* Desktop */}
-      <ul className="hidden lg:flex justify-center items-center gap-8 text-3xl ">
+      <ul className="hidden lg:flex justify-center items-center gap-14 text-3xl ">
         {navItems.map((item, i) => (
           <li key={i}>
             <a href={item.href}>{item.name}</a>
