@@ -12,6 +12,8 @@
   "dependencies": {
     "@tabler/icons-react": "^3.33.0",
     "@tailwindcss/vite": "^4.1.7",
+    "framer-motion": "^12.16.0",
+    "icons-react": "^3.7.1",
     "lucide-react": "^0.511.0",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",

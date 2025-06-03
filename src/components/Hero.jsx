@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import Me from "../assets/ME.jpg";
 import { IconBrandGithub } from "@tabler/icons-react";
 import { IconBrandLinkedin } from "@tabler/icons-react";
+import { IconFileCv } from "@tabler/icons-react";
 
 const titles = [
   "Developer.",
@@ -14,7 +15,7 @@ const titles = [
   "Digital Craftsman.",
 ];
 
-export const Hero = () => {
+export const Hero = ({ menuOpen }) => {
   const [text, setText] = useState("");
   const [titleIndex, setTitleIndex] = useState(0);
   const [charIndex, setCharIndex] = useState(0);
@@ -57,7 +58,7 @@ export const Hero = () => {
 
   return (
     <section className="w-full lg:py-16 bg-white">
-      <div className="max-w-7xl mx-auto px-6 flex flex-col lg:flex-row items-center justify-center gap-12 min-h-[80vh]">
+      <div className="max-w-7xl mx-auto px-6 flex flex-col xl:flex-row items-center justify-center gap-12 min-h-[80vh]">
         {/* Image Section */}
         <div className="flex justify-center">
           <img
@@ -68,16 +69,16 @@ export const Hero = () => {
         </div>
 
         {/* Text Section */}
-        <div className="text-center lg:text-left space-y-5 max-w-2xl">
+        <div className="text-center xl:text-left space-y-5 max-w-2xl">
           <h2 className="text-xl md:text-2xl text-gray-900">
             Hi, I'm Abdulaziz
           </h2>
-          <h3 className="text-xl md:text-3xl text-gray-900">
+          <h3 className="text-lg md:text-3xl text-gray-900">
             But others know me as a{" "}
-            <span className="text-xl md:text-3xl text-blue-800 font-semibold">
+            <span className="text-lg md:text-3xl text-blue-800 font-semibold">
               {text}
             </span>
-            <span className="animate-pulse">|</span>
+            {!menuOpen && <span className="animate-pulse">|</span>}
           </h3>
           <p className="hidden sm:block text-gray-700 text-base md:text-lg leading-relaxed font-['Inter']">
             I'm a software developer with a passion for continuous learning and
@@ -85,24 +86,32 @@ export const Hero = () => {
             problems, exploring new technologies, and writing code that’s as
             elegant as it is functional.
           </p>
-          <div className="flex gap-4 justify-center lg:justify-start flex-wrap mt-6">
+          <div className="flex gap-4 justify-center xl:justify-start flex-wrap mt-6">
             <a
-              href="https://github.com/YourUsername"
+              href="https://github.com/Abdulaziz-Abukar"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 px-4 py-2 border border-gray-800 text-gray-800 hover:bg-gray-900 hover:text-white rounded transition duration-200"
             >
               <IconBrandGithub size={20} stroke={1.5} />
-              <span>GitHub</span>
+              <span className="text-sm md:text-base">GitHub</span>
             </a>
             <a
-              href="https://www.linkedin.com/in/your-username"
+              href="https://www.linkedin.com/in/abdul-abukar/"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 px-4 py-2 border border-blue-800 text-blue-800 hover:bg-blue-900 hover:text-white rounded transition duration-200"
+              className="hidden sm:inline-flex items-center gap-2 px-4 py-2 border border-blue-800 text-blue-800 hover:bg-blue-900 hover:text-white rounded transition duration-200"
             >
               <IconBrandLinkedin size={20} stroke={1.5} />
-              <span>LinkedIn</span>
+              <span className="text-sm md:text-base">LinkedIn</span>
+            </a>
+            <a
+              href="../../../public/Abdulaziz-Abukar-Resume.pdf"
+              target="_blank"
+              className="inline-flex items-center gap-2 px-4 py-2 border border-blue-600 text-blue-600 hover:bg-blue-800 hover:text-white rounded transition duration-200"
+            >
+              <IconFileCv size={20} stroke={1.5} />
+              <span className="text-sm md:text-base">Resume</span>
             </a>
           </div>
         </div>
