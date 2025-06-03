@@ -1,1 +1,17 @@
 @import "tailwindcss";
+
+html {
+  scroll-behavior: smooth;
+}
+
+.font-heading {
+  font-family: "Zain", cursive;
+}
+
+.font-body {
+  font-family: "Inter", sans-serif;
+}
+
+.font-footer {
+  font-family: "Space Mono", monospace;
+}

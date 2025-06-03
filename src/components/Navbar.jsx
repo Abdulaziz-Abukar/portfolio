@@ -22,7 +22,7 @@ export const Navbar = ({ menuOpen, setMenuOpen }) => {
   });
 
   return (
-    <nav>
+    <nav className="font-heading">
       {/* Desktop */}
       <ul className="hidden lg:flex justify-center items-center gap-14 text-3xl ">
         {navItems.map((item, i) => (
