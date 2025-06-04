@@ -9,7 +9,9 @@ export const Home = () => {
   return (
     <>
       {/* TextLogo + Navbar (potential Theme Toggler?) */}
-      <header className="w-full sticky top-0 flex justify-between items-center font-['Zain'] py-8 sm:px-18 px-8">
+      <header
+        className={`w-full sticky top-0 flex justify-between items-center py-8 sm:px-18 px-8`}
+      >
         <TextLogo menuOpen={menuOpen} />
         <Navbar menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
       </header>

@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import { ToggleIcon } from "./features/ToggleIcon";
+// eslint-disable-next-line no-unused-vars
 import { motion, AnimatePresence } from "framer-motion";
 
 export const Navbar = ({ menuOpen, setMenuOpen }) => {
@@ -24,7 +25,7 @@ export const Navbar = ({ menuOpen, setMenuOpen }) => {
   return (
     <nav className="font-heading">
       {/* Desktop */}
-      <ul className="hidden lg:flex justify-center items-center gap-14 text-3xl ">
+      <ul className="hidden lg:flex justify-center items-center gap-14 text-2xl">
         {navItems.map((item, i) => (
           <li key={i}>
             <a href={item.href}>{item.name}</a>
@@ -39,7 +40,7 @@ export const Navbar = ({ menuOpen, setMenuOpen }) => {
       <AnimatePresence>
         {menuOpen && (
           <motion.div
-            className="fixed inset-0 text-white bg-gray-900/97 flex flex-col items-center justify-center gap-10 text-3xl"
+            className="fixed inset-0 text-white bg-gray-900/97 flex flex-col items-center justify-center gap-10 text-xl"
             initial={{ y: "-100%", opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
             exit={{ y: "-100%", opacity: 0 }}
