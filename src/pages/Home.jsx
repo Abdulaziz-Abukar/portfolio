@@ -18,6 +18,8 @@ export const Home = () => {
         <section className="w-full h-[750px] flex items-center sm:justify-center sm:px-18">
           <Hero menuOpen={menuOpen} />
         </section>
+        {/* About */}
+        <section></section>
         {/* Skills */}
         <section className="mt-25">
           <Skills />

@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Me from "../assets/ME.jpg";
+import Abdul from "../assets/Abdul.jpeg";
 import { IconBrandGithub } from "@tabler/icons-react";
 import { IconBrandLinkedin } from "@tabler/icons-react";
 import { IconFileCv } from "@tabler/icons-react";
@@ -62,7 +63,7 @@ export const Hero = ({ menuOpen }) => {
         {/* Image Section */}
         <div className="flex justify-center">
           <img
-            src={Me}
+            src={Abdul}
             alt="Abdulaziz"
             className="w-48 h-48 sm:w-60 sm:h-60 md:w-80 md:h-80 object-cover rounded-full border-4 border-black shadow-md"
           />
@@ -70,10 +71,10 @@ export const Hero = ({ menuOpen }) => {
 
         {/* Text Section */}
         <div className="text-center xl:text-left space-y-5 max-w-2xl">
-          <h2 className="text-xl md:text-2xl text-gray-900">
+          <h2 className="text-xl md:text-3xl text-gray-900">
             Hi, I'm Abdulaziz
           </h2>
-          <h3 className="text-lg md:text-3xl text-gray-900">
+          <h3 className="text-lg md:text-2xl text-gray-900">
             But others know me as a{" "}
             <span className="text-lg md:text-3xl text-blue-800 font-semibold">
               {text}

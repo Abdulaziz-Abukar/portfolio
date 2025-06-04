@@ -13,7 +13,7 @@ export const Skills = () => {
   return (
     <>
       <h2
-        className="text-3xl font-semibold text-center scroll-mt-60 font-['Zain']"
+        className="text-3xl font-semibold text-center scroll-mt-60 font-heading"
         id="skills-section"
       >
         Skills
