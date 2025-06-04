@@ -6,6 +6,7 @@ import { motion, AnimatePresence } from "framer-motion";
 export const Navbar = ({ menuOpen, setMenuOpen }) => {
   const navItems = [
     { name: "Home", href: "#home-section" },
+    { name: "About", href: "#about-section" },
     { name: "Skills", href: "#skills-section" },
     { name: "Projects", href: "#projects-section" },
     { name: "Contact", href: "#contact-section" },
