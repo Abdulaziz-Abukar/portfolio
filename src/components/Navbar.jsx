@@ -29,7 +29,9 @@ export const Navbar = ({ menuOpen, setMenuOpen }) => {
       <ul className="hidden lg:flex justify-center items-center gap-14 text-xl">
         {navItems.map((item, i) => (
           <li key={i}>
-            <a href={item.href}>{item.name}</a>
+            <a href={item.href} className="underline-hover">
+              {item.name}
+            </a>
           </li>
         ))}
       </ul>

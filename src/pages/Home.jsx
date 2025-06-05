@@ -11,7 +11,7 @@ export const Home = () => {
     <>
       {/* TextLogo + Navbar (potential Theme Toggler?) */}
       <header
-        className={`w-full sticky top-0 flex justify-between items-center py-8 sm:px-18 px-8`}
+        className={`w-full sticky top-0 flex justify-between items-center py-8 lg:px-18 px-4`}
       >
         <TextLogo menuOpen={menuOpen} />
         <Navbar menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
@@ -22,7 +22,7 @@ export const Home = () => {
           <Hero menuOpen={menuOpen} />
         </section>
         {/* About */}
-        <section className="p-10 sm:px-18 mt-40">
+        <section className="px-18 mt-40">
           <About />
         </section>
         {/* Skills */}

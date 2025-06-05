@@ -12,7 +12,6 @@ const titles = [
   "Problem Solver.",
   "Tech Enthusiast.",
   "Lifelong Learner.",
-  "Digital Craftsman.",
 ];
 
 export const Hero = ({ menuOpen }) => {
@@ -70,12 +69,12 @@ export const Hero = ({ menuOpen }) => {
 
         {/* Text Section */}
         <div className="text-center xl:text-left space-y-5 max-w-2xl">
-          <h1 className="text-xl md:text-2xl text-gray-900 font-heading">
+          <h1 className="text-xl md:text-2xl text-gray-900 font-semibold font-heading">
             Hi, I'm Abdulaziz
           </h1>
-          <h3 className="text-lg md:text-2xl text-gray-900 font-heading">
+          <h3 className="text-base md:text-2xl text-gray-900 font-heading">
             But others know me as a{" "}
-            <span className="text-lg md:text-3xl text-blue-800 font-semibold">
+            <span className="text-base md:text-3xl text-blue-800 font-semibold">
               {text}
             </span>
             {!menuOpen && <span className="animate-pulse">|</span>}
