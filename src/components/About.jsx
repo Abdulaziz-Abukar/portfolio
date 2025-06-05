@@ -3,7 +3,12 @@ import React from "react";
 export const About = () => {
   return (
     <div className="max-w-3xl mx-auto p-8 sm:p-10 space-y-8 font-body">
-      <h2 className="text-2xl font-bold font-heading text-center">About Me</h2>
+      <h2
+        className="text-2xl font-bold font-heading text-center scroll-mt-40"
+        id="about-section"
+      >
+        About Me
+      </h2>
 
       <section>
         <h3 className="text-xl font-semibold mb-2">My Journey</h3>

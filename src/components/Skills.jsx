@@ -15,7 +15,10 @@ export const Skills = () => {
     <>
       <section className="flex flex-col items-center justify-center w-full px-4">
         <div className="w-full max-w-3xl skills-height p-6 sm:p-10 space-y-8">
-          <h2 className="text-2xl font-bold font-heading text-center mb-6">
+          <h2
+            className="text-2xl font-bold font-heading text-center mb-6 scroll-mt-40"
+            id="skills-section"
+          >
             Skills
           </h2>
           {/* Tabs */}

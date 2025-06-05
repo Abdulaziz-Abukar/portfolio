@@ -20,7 +20,6 @@ export const skills = [
   { name: "Java", type: "Backend", level: "Intermediate" },
   { name: "Python", type: "Backend", level: "Expert" },
   { name: "Swift", type: "Backend", level: "Intermediate" },
-  { name: "Lua", type: "Backend", level: "Intermediate" },
 
   // === DevOps / Tools ===
   { name: "npm", type: "Tools", level: "Expert" },

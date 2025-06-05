@@ -26,7 +26,7 @@ export const Home = () => {
           <About />
         </section>
         {/* Skills */}
-        <section className="p-10 sm:px-18 mt-50">
+        <section className="p-10 mt-50">
           <Skills />
         </section>
         {/* Projects */}
