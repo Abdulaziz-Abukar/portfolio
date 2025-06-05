@@ -13,14 +13,11 @@ export const Skills = () => {
 
   return (
     <>
-      <h2
-        className="text-xl md:text-2xl font-semibold text-center scroll-mt-60 font-heading"
-        id="skills-section"
-      >
-        Skills
-      </h2>
       <section className="flex flex-col items-center justify-center w-full px-4">
-        <div className="w-full max-w-4xl p-6 sm:p-10">
+        <div className="w-full max-w-3xl skills-height p-6 sm:p-10 space-y-8">
+          <h2 className="text-2xl font-bold font-heading text-center mb-6">
+            Skills
+          </h2>
           {/* Tabs */}
           <ul className="flex justify-center gap-4 sm:gap-6 border-b border-gray-300 pb-2 font-body">
             {tabs.map((tab) => (
@@ -59,7 +56,7 @@ export const Skills = () => {
                   key={index}
                   className="flex flex-col p-2 rounded-xl text-sm sm:text-base border shadow-md bg-white hover:shadow-md transition"
                 >
-                  <p className="font-semibold">{skill.name}</p>
+                  <p className="font-semibold ">{skill.name}</p>
                   <p className="text-sm text-gray-600">{skill.level}</p>
                 </li>
               ))}

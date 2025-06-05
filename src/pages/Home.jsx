@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { TextLogo } from "../components/TextLogo";
 import { Navbar } from "../components/Navbar";
 import { Hero } from "../components/Hero";
+import { About } from "../components/About";
 import { Skills } from "../components/Skills";
 
 export const Home = () => {
@@ -17,13 +18,15 @@ export const Home = () => {
       </header>
       <main className="h-[10000px]">
         {/* Hero-Section */}
-        <section className="w-full h-[750px] flex items-center sm:justify-center sm:px-18">
+        <section className="w-full h-[650px] flex items-center sm:justify-center sm:px-18">
           <Hero menuOpen={menuOpen} />
         </section>
         {/* About */}
-        <section></section>
+        <section className="p-10 sm:px-18 mt-40">
+          <About />
+        </section>
         {/* Skills */}
-        <section className="mt-25">
+        <section className="p-10 sm:px-18 mt-50">
           <Skills />
         </section>
         {/* Projects */}

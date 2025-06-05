@@ -15,3 +15,7 @@ html {
 .font-footer {
   font-family: "Space Mono", monospace;
 }
+
+.skills-height {
+  min-height: 450px;
+}

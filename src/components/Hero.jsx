@@ -70,9 +70,9 @@ export const Hero = ({ menuOpen }) => {
 
         {/* Text Section */}
         <div className="text-center xl:text-left space-y-5 max-w-2xl">
-          <h2 className="text-xl md:text-2xl text-gray-900 font-heading">
+          <h1 className="text-xl md:text-2xl text-gray-900 font-heading">
             Hi, I'm Abdulaziz
-          </h2>
+          </h1>
           <h3 className="text-lg md:text-2xl text-gray-900 font-heading">
             But others know me as a{" "}
             <span className="text-lg md:text-3xl text-blue-800 font-semibold">
@@ -80,7 +80,7 @@ export const Hero = ({ menuOpen }) => {
             </span>
             {!menuOpen && <span className="animate-pulse">|</span>}
           </h3>
-          <p className="hidden sm:block text-gray-700 text-base md:text-lg leading-relaxed font-body">
+          <p className="hidden sm:block text-gray-700 text-base leading-relaxed font-body">
             I'm a software developer with a passion for continuous learning and
             building tools that make life easier. I thrive on solving complex
             problems, exploring new technologies, and writing code that’s as

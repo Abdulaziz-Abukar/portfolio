@@ -26,7 +26,7 @@ export const Navbar = ({ menuOpen, setMenuOpen }) => {
   return (
     <nav className="font-heading">
       {/* Desktop */}
-      <ul className="hidden lg:flex justify-center items-center gap-14 text-2xl">
+      <ul className="hidden lg:flex justify-center items-center gap-14 text-xl">
         {navItems.map((item, i) => (
           <li key={i}>
             <a href={item.href}>{item.name}</a>
