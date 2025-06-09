@@ -3,6 +3,7 @@ import Abdul from "../assets/Abdul.jpg";
 import { IconBrandGithub } from "@tabler/icons-react";
 import { IconBrandLinkedin } from "@tabler/icons-react";
 import { IconFileCv } from "@tabler/icons-react";
+import { IconArrowDown } from "@tabler/icons-react";
 
 const titles = [
   "Developer.",
@@ -56,7 +57,7 @@ export const Hero = ({ menuOpen }) => {
   }, [charIndex, isDeleting, titleIndex, isPaused]);
 
   return (
-    <section className="w-full lg:py-16 bg-white">
+    <section className="w-full lg:py-16 bg-white" id="home-section">
       <div className="max-w-7xl mx-auto px-6 flex flex-col xl:flex-row items-center justify-center gap-12 min-h-[80vh]">
         {/* Image Section */}
         <div className="flex justify-center">
@@ -114,6 +115,12 @@ export const Hero = ({ menuOpen }) => {
             </a>
           </div>
         </div>
+      </div>
+      <div className="flex justify-center">
+        <IconArrowDown
+          size={25}
+          className="hidden xl:block absolute bottom-5 text-gray-500 animate-bounce"
+        />
       </div>
     </section>
   );

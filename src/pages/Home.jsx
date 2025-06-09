@@ -4,6 +4,7 @@ import { Navbar } from "../components/Navbar";
 import { Hero } from "../components/Hero";
 import { About } from "../components/About";
 import { Skills } from "../components/Skills";
+import { Projects } from "../components/Projects";
 
 export const Home = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -22,7 +23,7 @@ export const Home = () => {
           <Hero menuOpen={menuOpen} />
         </section>
         {/* About */}
-        <section className="px-18 mt-40">
+        <section className="px-18 mt-50">
           <About />
         </section>
         {/* Skills */}
@@ -30,7 +31,9 @@ export const Home = () => {
           <Skills />
         </section>
         {/* Projects */}
-        <section></section>
+        <section className="p-10 mt-50">
+          <Projects />
+        </section>
         {/* Contact */}
         <section></section>
       </main>
