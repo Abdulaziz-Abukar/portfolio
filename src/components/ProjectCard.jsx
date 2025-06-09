@@ -36,7 +36,7 @@ export const ProjectCard = ({ title, short, stack, image, github, live }) => {
             href={github}
             target="_blank"
             rel="noopener noreferrer"
-            className="text-xs px-3 py-1 font-body border border-gray-800 text-gray-800 rounded hover:bg-gray-800 hover:text-white transition flex items-center gap-1"
+            className="text-xs px-3 py-1 font-body border border-gray-800 text-white bg-gray-800 sm:bg-white sm:text-gray-800 rounded sm:hover:bg-gray-800 sm:hover:text-white transition flex items-center gap-1"
             onClick={(e) => e.stopPropagation()}
           >
             <IconBrandGithub size={14} />
@@ -48,7 +48,7 @@ export const ProjectCard = ({ title, short, stack, image, github, live }) => {
             href={live}
             target="_blank"
             rel="noopener noreferrer"
-            className="text-xs px-3 py-1 font-body border border-blue-700 text-blue-700 rounded hover:bg-blue-700 hover:text-white transition flex items-center gap-1"
+            className="text-xs px-3 py-1 font-body border border-blue-700 text-white bg-blue-700 sm:bg-white sm:text-blue-700 rounded sm:hover:bg-blue-700 sm:hover:text-white transition flex items-center gap-1"
             onClick={(e) => e.stopPropagation()}
           >
             <IconWorld size={14} />

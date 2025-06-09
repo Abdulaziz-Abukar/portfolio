@@ -91,7 +91,7 @@ export const Hero = ({ menuOpen }) => {
               href="https://github.com/Abdulaziz-Abukar"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 px-4 py-2 border border-gray-800 text-gray-800 hover:bg-gray-900 hover:text-white rounded transition duration-200"
+              className="inline-flex items-center gap-2 px-4 py-2 border border-gray-800 text-white bg-gray-900 sm:bg-white sm:text-gray-800 sm:hover:bg-gray-900 sm:hover:text-white rounded transition duration-200"
             >
               <IconBrandGithub size={20} stroke={1.5} />
               <span className="text-sm md:text-base">GitHub</span>
@@ -108,7 +108,7 @@ export const Hero = ({ menuOpen }) => {
             <a
               href="../../../public/Abdulaziz-Abukar-Resume.pdf"
               target="_blank"
-              className="inline-flex items-center gap-2 px-4 py-2 border border-blue-600 text-blue-600 hover:bg-blue-800 hover:text-white rounded transition duration-200"
+              className="inline-flex items-center gap-2 px-4 py-2 border text-white bg-blue-800 sm:bg-white sm:border-blue-600 sm:text-blue-600 sm:hover:bg-blue-800 sm:hover:text-white rounded transition duration-200"
             >
               <IconFileCv size={20} stroke={1.5} />
               <span className="text-sm md:text-base">Resume</span>
