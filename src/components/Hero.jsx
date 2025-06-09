@@ -106,7 +106,7 @@ export const Hero = ({ menuOpen }) => {
               <span className="text-sm md:text-base">LinkedIn</span>
             </a>
             <a
-              href="../../../public/Abdulaziz-Abukar-Resume.pdf"
+              href="/Abdulaziz-Abukar-Resume.pdf"
               target="_blank"
               className="inline-flex items-center gap-2 px-4 py-2 border text-white bg-blue-800 sm:bg-white sm:border-blue-600 sm:text-blue-600 sm:hover:bg-blue-800 sm:hover:text-white rounded transition duration-200"
             >
