@@ -21,7 +21,7 @@ export const projects = [
     description:
       "A sleek, themeable Github profile lookup app built with React and Vite. Easily search for any developer by their GitHub username and get essential information with a modern UI and smooth UX.",
     short: "Look up GitHub profiles with a modern, themeable interface.",
-    stack: ["React", "Vite", "GitHub API", "CSS Modules"],
+    stack: ["React", "Vite", "REST API", "CSS Modules"],
     github: "https://github.com/Abdulaziz-Abukar/devfinder",
     live: "https://abdulaziz-abukar.github.io/devfinder/",
   },
@@ -31,7 +31,7 @@ export const projects = [
     description:
       "Jammming is a React + Spotify web application that allows users to search for music, create custom playlists, and save them directly to their Spotify accounts.",
     short: "Create and save Spotify playlists using a custom web app.",
-    stack: ["React", "Vite", "Spotify API"],
+    stack: ["React", "Vite", "REST API", "OAuth"],
     github: "https://github.com/Abdulaziz-Abukar/jammming",
     live: "https://abdulaziz-abukar.github.io/jammming/",
   },
@@ -41,7 +41,7 @@ export const projects = [
     description:
       "An interactive map application that allows users to view data about any country. Built with Angular, it provides an engaging way to explore global information.",
     short: "Explore country data through an interactive Angular-based map.",
-    stack: ["Angular", "SVG"],
+    stack: ["Angular", "SVG", "REST API"],
     github: "https://github.com/Abdulaziz-Abukar/Interactive-World-Map",
     live: "https://abdulaziz-abukar.github.io/Interactive-World-Map/",
   },
