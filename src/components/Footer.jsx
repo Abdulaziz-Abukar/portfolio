@@ -19,7 +19,7 @@ export const Footer = () => {
           </a>
 
           <a
-            href="https://www.linkedin.com/in/abdulaziz-abukar"
+            href="https://www.linkedin.com/in/abdul-abukar/"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center gap-2 hover:text-blue-700 transition"
