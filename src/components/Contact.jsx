@@ -28,11 +28,15 @@ export const Contact = () => {
     <section className="px-6 py-16 sm:px-10">
       <div className="max-w-3xl mx-auto bg-white rounded-2xl shadow-[0_8px_30px_rgb(0,0,0,0.12)] p-8 sm:p-10 font-body text-gray-800">
         <h2
-          className="text-2xl font-heading font-semibold text-center mb-6 scroll-mt-30"
+          className="text-xl sm:text-2xl font-heading font-semibold text-center mb-6 scroll-mt-30"
           id="contact-section"
         >
-          Contact Me
+          Contact
         </h2>
+        <p className="text-center text-gray-600 mb-6 text-sm sm:text-base">
+          Let’s connect! Whether it’s collaboration, feedback, or a simple
+          hello, I'd love to hear from you!
+        </p>
 
         <form ref={form} onSubmit={sendEmail} className="space-y-6">
           <div>

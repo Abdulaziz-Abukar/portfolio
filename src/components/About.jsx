@@ -4,7 +4,7 @@ export const About = () => {
   return (
     <div className="max-w-3xl mx-auto p-8 sm:p-10 space-y-8 font-body">
       <h2
-        className="text-2xl font-semibold font-heading text-center scroll-mt-30"
+        className="text-xl sm:text-2xl font-semibold font-heading text-center scroll-mt-30"
         id="about-section"
       >
         About Me

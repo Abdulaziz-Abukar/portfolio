@@ -16,11 +16,15 @@ export const Skills = () => {
       <section className="flex flex-col items-center justify-center w-full px-4">
         <div className="w-full max-w-3xl skills-height p-6 sm:p-10 space-y-8">
           <h2
-            className="text-2xl font-semibold font-heading text-center mb-6 scroll-mt-40"
+            className="text-xl sm:text-2xl font-semibold font-heading text-center mb-6 scroll-mt-40"
             id="skills-section"
           >
             Skills
           </h2>
+          <p className="text-center text-gray-600 mb-6 text-sm sm:text-base">
+            A snapshot of the tools and technologies I use to bring ideas to
+            life.
+          </p>
           {/* Tabs */}
           <ul className="flex justify-center gap-4 sm:gap-6 border-b border-gray-300 pb-2 font-body">
             {tabs.map((tab) => (
