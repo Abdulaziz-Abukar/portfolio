@@ -2,8 +2,19 @@ import PlaywiseImg from "../assets/Playwise.png";
 import DevFinderImg from "../assets/DevFinder.png";
 import JammmingImg from "../assets/Jammming.png";
 import InteractiveWorldMapImg from "../assets/Interactive-World-Map.png";
+import BugStackIcon from "../assets/BugStackIcon.png";
 
 export const projects = [
+  {
+    title: "BugStack API",
+    image: BugStackIcon,
+    description:
+      "A backend-only GraphQL API built for managing software issues. Track bugs, assign users, and organize projects with secure, token-based access.",
+    short:
+      "Backend-only GraphQL API for tracking bugs, assigning users, and managing projects securely",
+    stack: ["GraphQL", "Apollo", "MongoDB", "JWT"],
+    github: "https://github.com/Abdulaziz-Abukar/BugStack",
+  },
   {
     title: "Playwise",
     image: PlaywiseImg,
