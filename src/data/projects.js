@@ -1,4 +1,6 @@
 import PlaywiseImg from "../assets/Playwise.png";
+import CalgaryImg from "../assets/Calgary.jpg";
+import CommerceDataImg from "../assets/CommerceData.jpg";
 import DevFinderImg from "../assets/DevFinder.png";
 import JammmingImg from "../assets/Jammming.png";
 import InteractiveWorldMapImg from "../assets/Interactive-World-Map.png";
@@ -6,12 +8,33 @@ import BugStackIcon from "../assets/BugStackIcon.png";
 
 export const projects = [
   {
+    title: "Commerce Data Platform",
+    image: CommerceDataImg,
+    description:
+      "An end-to-end commerce analytics platform that ingests e-commerce data from external APIs, transforms it using dbt, and delivers analytics-ready datasets in BigQuery with Airflow orchestration.",
+    short:
+      "End-to-end data platform for ingesting and transforming e-commerce data into analytics-ready datasets.",
+    stack: ["Python", "SQL", "Airflow", "dbt", "BigQuery"],
+    github: "https://github.com/Abdulaziz-Abukar/commerce-data-platform",
+  },
+  {
+    title: "Calgary Traffic Incidents Pipeline",
+    image: CalgaryImg,
+    description:
+      "An end-to-end data engineering project that simulates a real-world pipeline—ingesting Calgary traffic incidents, handling incremental updates, and delivering clean, analytics-ready data through automated orchestration.",
+    short:
+      "Production-style data pipeline for ingesting and transforming Calgary traffic incident data incrementally.",
+    stack: ["Python", "Dagster", "dbt", "BigQuery"],
+    github:
+      "https://github.com/Abdulaziz-Abukar/calgary-traffic-incidents-pipeline",
+  },
+  {
     title: "BugStack API",
     image: BugStackIcon,
     description:
       "A backend-only GraphQL API built for managing software issues. Track bugs, assign users, and organize projects with secure, token-based access.",
     short:
-      "Backend-only GraphQL API for tracking bugs, assigning users, and managing projects securely",
+      "Backend-only GraphQL API for tracking bugs, assigning users, and managing projects securely.",
     stack: ["GraphQL", "Apollo", "MongoDB", "JWT"],
     github: "https://github.com/Abdulaziz-Abukar/BugStack",
   },

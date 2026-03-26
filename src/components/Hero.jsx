@@ -81,10 +81,10 @@ export const Hero = ({ menuOpen }) => {
             {!menuOpen && <span className="animate-pulse">|</span>}
           </h3>
           <p className="hidden sm:block text-gray-700 text-base leading-relaxed font-body">
-            I'm a software developer with a passion for continuous learning and
-            building tools that make life easier. I thrive on solving complex
-            problems, exploring new technologies, and writing code that’s as
-            elegant as it is functional.
+            I'm a software engineer who enjoys building reliable systems, data
+            pipelines, and tools that turn raw data into useful insights. I
+            enjoy solving complex problems, learning new technologies, and
+            designing solutions that are both scalable and easy to maintain.
           </p>
           <div className="flex gap-4 justify-center xl:justify-start flex-wrap mt-6 font-body">
             <a
@@ -106,7 +106,7 @@ export const Hero = ({ menuOpen }) => {
               <span className="text-sm md:text-base">LinkedIn</span>
             </a>
             <a
-              href="/AbdulazizA-Resume.pdf"
+              href="/AbdulA-Resume.pdf"
               target="_blank"
               className="inline-flex items-center gap-2 px-4 py-2 border text-white bg-blue-800 sm:bg-white sm:border-blue-600 sm:text-blue-600 sm:hover:bg-blue-800 sm:hover:text-white rounded transition duration-200"
             >

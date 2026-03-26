@@ -13,34 +13,58 @@ export const About = () => {
       <section>
         <h3 className="text-xl font-semibold mb-2">My Journey</h3>
         <p className="leading-relaxed">
-          I've always been fascinated by computers, whether it was exploring
-          games, customizing software, or just trying to break things to see how
-          they worked. That passion grew over the years and naturally led me to
-          pursue software engineering. What started as curiosity turned into a
-          craft: designing, building, and refining digital experiences that
-          solve real problems and bring ideas to life.
+          I've always been fascinated by computers — exploring games,
+          customizing software, and trying to break things to understand how
+          they worked. That curiosity eventually led me to software engineering,
+          where building systems and solving problems became both a discipline
+          and a creative outlet.
+          <br />
+          <br />
+          Over time, my interest has expanded beyond application development
+          into <strong>data systems and analytics</strong>, where software
+          engineering meets information and decision-making. I enjoy working
+          with data pipelines, backend services, and tools that transform raw
+          information into something useful and reliable.
         </p>
       </section>
 
       <section>
         <h3 className="text-xl font-semibold mb-2">How I Work</h3>
         <p className="leading-relaxed">
-          I'm driven by clean, scalable code and meaningful collaboration. I
-          enjoy taking complex problems, breaking them down, and delivering
-          thoughtful solutions. Whether I'm working on sleek frontends, robust
-          backends, or integrating APIs, I strive for balance between user
-          experience and technical performance.
+          I'm driven by{" "}
+          <strong>clarity, scalability, and thoughtful design</strong>. I enjoy
+          breaking complex problems into manageable pieces and building
+          solutions that are both practical and maintainable.
+          <br />
+          <br />
+          My experience spans{" "}
+          <strong>backend development, APIs, and data workflows</strong>, and I
+          care about writing code that not only works but can grow with the
+          system around it. I value collaboration, continuous learning, and
+          building tools that make other developers' and users' lives easier.
         </p>
       </section>
 
       <section>
         <h3 className="text-xl font-semibold mb-2">What's Next?</h3>
         <p className="leading-relaxed">
-          I'm currently focused on growing as a developer by building real-world
-          applications, learning new technologies, and refining my ability to
-          work both independently and within teams. Every project is an
-          opportunity to learn, improve, and leave something better than I found
-          it.
+          I'm currently focused on growing as a software engineer by building
+          real-world applications and expanding my skills in{" "}
+          <strong>
+            data engineering, analytics workflows, and backend systems
+          </strong>
+          . I'm especially interested in projects that involve{" "}
+          <strong>
+            data pipelines, automation, and transforming raw data into
+            meaningful insights
+          </strong>
+          .
+          <br />
+          <br />
+          <p className="leading-relaxed">
+            Every project is an opportunity to learn, improve, and leave
+            something better than I found it.
+          </p>
         </p>
         <p className="leading-relaxed mt-4">
           If you'd like to see how I bring that mindset to life, feel free to

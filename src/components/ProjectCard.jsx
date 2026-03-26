@@ -4,7 +4,7 @@ import { IconWorld } from "@tabler/icons-react";
 
 export const ProjectCard = ({ title, short, stack, image, github, live }) => {
   return (
-    <div className="border rounded-xl shadow hover:shadow-lg transition p-4">
+    <div className="border rounded-xl shadow hover:shadow-lg transition p-4 flex flex-col h-full">
       {image && (
         <img
           src={image}
@@ -30,7 +30,7 @@ export const ProjectCard = ({ title, short, stack, image, github, live }) => {
 
       <p className="font-body text-sm text-gray-600 mb-4">{short}</p>
 
-      <div className="flex gap-2 mt-4">
+      <div className="flex gap-2 mt-auto pt-2">
         {github && (
           <a
             href={github}
@@ -43,6 +43,7 @@ export const ProjectCard = ({ title, short, stack, image, github, live }) => {
             GitHub
           </a>
         )}
+
         {live && (
           <a
             href={live}
