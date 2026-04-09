@@ -12,7 +12,7 @@ export const Contact = () => {
         "service_oexwjdq",
         "template_9t5lf3a",
         form.current,
-        "Xqg1-qDnPRTjQoZX5"
+        "Xqg1-qDnPRTjQoZX5",
       )
       .then(() => {
         alert("Message sent successfully");
@@ -26,7 +26,7 @@ export const Contact = () => {
 
   return (
     <section className="px-6 py-16 sm:px-10">
-      <div className="max-w-3xl mx-auto bg-white rounded-2xl shadow-[0_8px_30px_rgb(0,0,0,0.12)] p-8 sm:p-10 font-body text-gray-800">
+      <div className="max-w-3xl mx-auto bg-white rounded-2xl shadow-[0_8px_30px_rgb(0,0,0,0.12)] hover:shadow-[0_20px_60px_rgb(0,0,0,0.2)] hover:-translate-y-2 transition-all duration-300 p-8 sm:p-10 font-body text-gray-800">
         <h2
           className="text-xl sm:text-2xl font-heading font-semibold text-center mb-6 scroll-mt-30"
           id="contact-section"

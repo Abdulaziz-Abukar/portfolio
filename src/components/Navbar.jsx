@@ -1,15 +1,17 @@
 import React, { useEffect } from "react";
+import { Link } from "react-router-dom";
 import { ToggleIcon } from "./features/ToggleIcon";
 // eslint-disable-next-line no-unused-vars
 import { motion, AnimatePresence } from "framer-motion";
 
 export const Navbar = ({ menuOpen, setMenuOpen }) => {
   const navItems = [
-    { name: "Home", href: "#home-section" },
-    { name: "About", href: "#about-section" },
-    { name: "Skills", href: "#skills-section" },
-    { name: "Projects", href: "#projects-section" },
-    { name: "Contact", href: "#contact-section" },
+    { name: "Home", to: "/#home-section" },
+    { name: "About", to: "/#about-section" },
+    { name: "Skills", to: "/#skills-section" },
+    { name: "Projects", to: "/#projects-section" },
+    { name: "Contact", to: "/#contact-section" },
+    { name: "Blog", to: "/blog" },
   ];
 
   useEffect(() => {
@@ -29,9 +31,9 @@ export const Navbar = ({ menuOpen, setMenuOpen }) => {
       <ul className="hidden lg:flex justify-center items-center gap-14 text-xl">
         {navItems.map((item, i) => (
           <li key={i}>
-            <a href={item.href} className="underline-hover">
+            <Link to={item.to} className="underline-hover">
               {item.name}
-            </a>
+            </Link>
           </li>
         ))}
       </ul>
@@ -53,9 +55,9 @@ export const Navbar = ({ menuOpen, setMenuOpen }) => {
             <ul className="text-white z-10 space-y-6">
               {navItems.map((item, i) => (
                 <li key={i}>
-                  <a href={item.href} onClick={() => setMenuOpen(false)}>
+                  <Link to={item.to} onClick={() => setMenuOpen(false)}>
                     {item.name}
-                  </a>
+                  </Link>
                 </li>
               ))}
             </ul>
