@@ -5,6 +5,8 @@ import { Navbar } from "../components/Navbar";
 import { Footer } from "../components/Footer";
 import { BlogCard } from "../components/BlogCard";
 import { blogPosts } from "../data/blogPosts";
+import { TAG_ACTIVE } from "../utils/tag-styles";
+import { TAG_INACTIVE } from "../utils/tag-styles";
 
 const ALL_TAGS = [
   "LeetCode",
@@ -13,21 +15,6 @@ const ALL_TAGS = [
   "Reading Notes",
   "Career",
 ];
-
-const TAG_ACTIVE = {
-  LeetCode: "bg-emerald-600 text-white border-emerald-600",
-  "Data Engineering": "bg-blue-700 text-white border-blue-700",
-  Thoughts: "bg-purple-600 text-white border-purple-600",
-  "Reading Notes": "bg-amber-500 text-white border-amber-500",
-  Career: "bg-rose-600 text-white border-rose-600",
-};
-const TAG_INACTIVE = {
-  LeetCode: "text-emerald-800 border-emerald-300 hover:bg-emerald-50",
-  "Data Engineering": "text-blue-800 border-blue-300 hover:bg-blue-50",
-  Thoughts: "text-purple-800 border-purple-300 hover:bg-purple-50",
-  "Reading Notes": "text-amber-700 border-amber-300 hover:bg-amber-50",
-  Career: "text-rose-800 border-rose-300 hover:bg-rose-50",
-};
 
 const normalizeTags = (tags) =>
   tags.flatMap((t) => t.split(",").map((s) => s.trim())).filter(Boolean);
@@ -55,7 +42,7 @@ export const Blog = () => {
 
   return (
     <>
-      <header className="w-full sticky top-0 bg-white z-50 flex justify-between items-center py-4 lg:px-18 px-4">
+      <header className="w-full sticky top-0 z-50 flex justify-between items-center py-4 lg:px-18 px-4">
         <Link to="/">
           <TextLogo menuOpen={menuOpen} />
         </Link>
@@ -77,7 +64,7 @@ export const Blog = () => {
             <button
               key={tag}
               onClick={() => handleTagClick(tag)}
-              className={`text-sm px-3 py-1 rounded-full border font-body transition ${
+              className={`text-sm px-3 py-1 rounded-full cursor-pointer border font-body transition ${
                 activeTag === tag
                   ? (TAG_ACTIVE[tag] ??
                     "bg-gray-800 text-white border-gray-800")
